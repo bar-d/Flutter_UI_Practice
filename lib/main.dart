@@ -50,7 +50,7 @@ class App extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 120,
+                height: 60,
               ),
               Text(
                 "Total Balance",
@@ -74,19 +74,97 @@ class App extends StatelessWidget {
                 height: 30,
               ),
               const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Button(
-                      text: "Transfer",
-                      backgroundColor: Color(0xFFF1B33B),
-                      textColor: Colors.black,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Button(
+                    text: "Transfer",
+                    backgroundColor: Color(0xFFF1B33B),
+                    textColor: Colors.black,
+                  ),
+                  Button(
+                    text: "Request",
+                    backgroundColor: Color(0xFF1F2123),
+                    textColor: Colors.white,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 80,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    "Wallets",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 36,
+                      fontWeight: FontWeight.w600,
                     ),
-                    Button(
-                      text: "Request",
-                      backgroundColor: Color(0xFF1F2123),
-                      textColor: Colors.white,
+                  ),
+                  Text(
+                    "View All",
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.8),
+                      fontSize: 18,
                     ),
-                  ])
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: const Color(0xFF1F2123),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(30),
+                  child: Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            "Euro",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 32,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: [
+                              const Text(
+                                "6 428",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "EUR",
+                                style: TextStyle(
+                                  color: Colors.white.withOpacity(0.8),
+                                  fontSize: 20,
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),
