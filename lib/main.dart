@@ -14,6 +14,7 @@ class App extends StatelessWidget {
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 40),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 height: 80,
@@ -37,10 +38,56 @@ class App extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.white.withOpacity(0.8),
                           fontSize: 18,
-                          fontWeight: FontWeight.w800,
+                          fontWeight: FontWeight.w400,
                         ),
                       ),
                     ],
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 120,
+              ),
+              Text(
+                "Total Balance",
+                style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.white.withOpacity(0.8),
+                ),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                "\$5 194 482",
+                style: TextStyle(
+                  fontSize: 44,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white.withOpacity(0.8),
+                ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(45),
+                      color: Colors.amber,
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 50,
+                        vertical: 20,
+                      ),
+                      child: Text(
+                        "Transfer",
+                        style: TextStyle(
+                          fontSize: 22,
+                        ),
+                      ),
+                    ),
                   )
                 ],
               )
