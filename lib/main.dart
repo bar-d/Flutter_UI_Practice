@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/Widgets/button.dart';
 
 void main() {
   runApp(const App());
@@ -72,48 +73,20 @@ class App extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(45),
-                      color: Colors.amber,
+              const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Button(
+                      text: "Transfer",
+                      backgroundColor: Color(0xFFF1B33B),
+                      textColor: Colors.black,
                     ),
-                    child: const Padding(
-                      padding: EdgeInsets.symmetric(
-                        vertical: 20,
-                        horizontal: 44,
-                      ),
-                      child: Text(
-                        "Transfer",
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
-                      ),
+                    Button(
+                      text: "Request",
+                      backgroundColor: Color(0xFF1F2123),
+                      textColor: Colors.white,
                     ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(45),
-                      color: const Color(0XFF1F2123),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.symmetric(
-                        vertical: 20,
-                        horizontal: 44,
-                      ),
-                      child: Text(
-                        "Request",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                      ),
-                    ),
-                  )
-                ],
-              )
+                  ])
             ],
           ),
         ),
