@@ -13,7 +13,9 @@ class App extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color(0xFF181818),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 40),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 20,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -52,7 +54,7 @@ class App extends StatelessWidget {
               Text(
                 "Total Balance",
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 20,
                   color: Colors.white.withOpacity(0.8),
                 ),
               ),
@@ -62,7 +64,7 @@ class App extends StatelessWidget {
               Text(
                 "\$5 194 482",
                 style: TextStyle(
-                  fontSize: 44,
+                  fontSize: 36,
                   fontWeight: FontWeight.w600,
                   color: Colors.white.withOpacity(0.8),
                 ),
@@ -71,6 +73,7 @@ class App extends StatelessWidget {
                 height: 30,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     decoration: BoxDecoration(
@@ -79,13 +82,32 @@ class App extends StatelessWidget {
                     ),
                     child: const Padding(
                       padding: EdgeInsets.symmetric(
-                        horizontal: 50,
                         vertical: 20,
+                        horizontal: 44,
                       ),
                       child: Text(
                         "Transfer",
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(45),
+                      color: const Color(0XFF1F2123),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 20,
+                        horizontal: 44,
+                      ),
+                      child: Text(
+                        "Request",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
                         ),
                       ),
                     ),
