@@ -1,4 +1,4 @@
-# toonflix
+# Flutter_UI_Practice
 
 A new Flutter project.
 
